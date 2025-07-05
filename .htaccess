@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://depokhostinger.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://depokhostinger.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.depokhostinger.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.depokhostinger.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://depokhostinger.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://depokhostinger.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.depokhostinger.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.depokhostinger.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
